@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Chatbot Widget",
+    "version": "1.0",
+    "description": "Injects a chatbot widget into websites.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["https://assorttech.com/"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  
